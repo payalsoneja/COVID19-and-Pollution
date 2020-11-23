@@ -23,3 +23,9 @@ OpenAQ has an R package [ropenaq](https://cran.r-project.org/web/packages/ropena
    + By `city`, `date`, `parameter` to plot average daily levels 
    + By `city`, `hour`, `parameter` to plot average hourly levels 
 
+### 3. Plotting
++ `Hourly` and `daily` plots help analyze on macro and micro level how pollution levels are going down in Delhi with a halt to day-to-day activities. 
++ Veritcal line segments separate time periods of different restrictions imposed by government
++ line plots are generated using `ggplot` and then converted to `plotly` compatible plots using `ggplotly` package
++ `rangeslider` provides functionality to zoom the date/time axis in and out 
++ Publishing to `plotly` requires setup that will generate username and api key 
