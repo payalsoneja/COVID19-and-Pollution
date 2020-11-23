@@ -1,5 +1,9 @@
 # COVID 19 and Air Pollution - Data Visualization
 A data-driven exploration of air pollution levels during different stages of restrictions imposed during COVID-19
+<p align="center">
+  <img src="https://raw.githubusercontent.com/payalsoneja/COVID19-and-Pollution/master/Output/plot_April5.gif" />
+</p>
+
 
 ### 1. Extracting data from OpenAQ using R
 + #### Setting up `ropenaq`:
