@@ -1,2 +1,21 @@
 # COVID 19 and Air Pollution - Data Visualization
- 
+A data-driven exploration of air pollution levels during different stages of restrictions imposed during COVID-19
+
+### 1. Extracting data from OpenAQ using R
++ #### Setting up `ropenaq`:
+OpenAQ has an R package [ropenaq](https://cran.r-project.org/web/packages/ropenaq/index.html) that gives easy access to their real time data [API](https://docs.openaq.org/). The first step is to use the function `aq_measurements` to fetch this data based on the requirements. For the scope of this use case, the focus is on Delhi, India. 
+
++ #### Weekly batches:
+`date_from` and `date_to` parameters control the temporal scope of extracted data. The code when run extracts data in chunks of weeks, until the current date. A csv file is saved to working directly for each week's extract.
+
+### 2. Cleaning and Transforming the data for visualization
+`covid_pollution.R` performs the following steps in order:
++ Loads and appends all extracted csv files into a dataframe
++ Sorts the dataframe by `location` and `dateLocal`
++ Converts `dateLocal` to R date variable
++ Creates time variable from `dateUTC` and cuts it into 60 minute intervals
++ Handles exceptions with dates missing data
++ Groups the data two ways:
+   + By `city`, `date`, `parameter` to plot average daily levels 
+   + By `city`, `hour`, `parameter` to plot average hourly levels 
+
