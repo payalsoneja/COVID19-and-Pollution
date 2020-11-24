@@ -1,5 +1,5 @@
 # COVID 19 and Air Pollution - Data Visualization
-A data-driven exploration of air pollution levels during different stages of restrictions imposed during COVID-19
+A data-driven exploration of air pollution levels during different stages of restrictions imposed to contain the spread of COVID-19
 <p align="center">
   <img src="https://raw.githubusercontent.com/payalsoneja/COVID19-and-Pollution/master/Output/hourly_plot_12april.gif" /> 
 </p>
