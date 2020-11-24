@@ -1,7 +1,7 @@
 # COVID 19 and Air Pollution - Data Visualization
 A data-driven exploration of air pollution levels during different stages of restrictions imposed during COVID-19
 <p align="center">
-  <img src="https://raw.githubusercontent.com/payalsoneja/COVID19-and-Pollution/master/Output/plot_April5.gif" /> 
+  <img src="https://raw.githubusercontent.com/payalsoneja/COVID19-and-Pollution/master/Output/hourly_plot_12April.gif" /> 
 </p>
 
 [Demo Output](https://chart-studio.plotly.com/~sonejapayal/13)
