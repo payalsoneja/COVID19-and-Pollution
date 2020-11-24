@@ -8,7 +8,7 @@ A data-driven exploration of air pollution levels during different stages of res
 
 ### 1. Extracting data from OpenAQ using R
 + #### Setting up `ropenaq`:
-OpenAQ has an R package [ropenaq](https://cran.r-project.org/web/packages/ropenaq/index.html) that gives easy access to their real time data [API](https://docs.openaq.org/). The first step is to use the function `aq_measurements` to fetch this data based on the requirements. For the scope of this use case, the focus is on Delhi, India. 
+OpenAQ has an R package [ropenaq](https://cran.r-project.org/web/packages/ropenaq/index.html) that gives easy access to their real time data [API](https://docs.openaq.org/). The first step is to use the function `aq_measurements` to fetch this data based on the requirements. For the scope of this use case, the focus is on Delhi, India. The data extracted will have all monitor locations within the specified city.
 
 + #### Weekly batches:
 `date_from` and `date_to` parameters control the temporal scope of extracted data. The code when run extracts data in chunks of weeks, until the current date. A csv file is saved to working directly for each week's extract.
