@@ -58,6 +58,8 @@ setwd("C:/Users/TCD/Documents/GitHub/covid_pollution")
 source("ropenaq_measurement.R") #attaching the openaq measurement R file
 
 # we have pollution data until the week of 25th April 2020
+# The trouble with this is that we can't extract data greater than 2 or 3 months old. 
+# They are stored in separate servers and we would need an amazon web server account to extract it.
 
 start_dates <- seq(from = ymd('2020-04-25'), to = ymd(Sys.Date()), by='weeks') #lubridate
 
